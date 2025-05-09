@@ -1,4 +1,4 @@
-// src/components/AutocompleteInput.jsx
+
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { useSearch } from '../context/SearchContext';
 import { useProducts } from '../context/ProductsContext';
@@ -23,7 +23,7 @@ const AutocompleteInput = () => {
     const lower = debouncedInput.toLowerCase();
     return products
       .filter((p) => p.name.toLowerCase().includes(lower))
-      .slice(0, 5); // Limit suggestions
+      .slice(0, 5); 
   }, [products, debouncedInput]);
 
   const handleSelect = useCallback((name) => {
@@ -44,7 +44,7 @@ const AutocompleteInput = () => {
         placeholder="Search products..."
        
       />
-      {isFocused && suggestions.length > 0 && (
+      {/* {isFocused && suggestions.length > 0 && (
         <ul className="suggestions" >
           {suggestions.map((s) => (
             <li
@@ -56,7 +56,7 @@ const AutocompleteInput = () => {
             </li>
           ))}
         </ul>
-      )}
+      )} */}
     </div>
   );
 };

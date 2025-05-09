@@ -1,4 +1,4 @@
-// src/components/ProductCard.jsx
+
 import React from 'react';
 
 const ProductCard = React.memo(({ product, onSelect }) => {

@@ -1,4 +1,4 @@
-// src/components/App.jsx
+
 import React from 'react';
 import { ProductsProvider } from '../context/ProductsContext';
 import { SearchProvider } from '../context/SearchContext';

@@ -1,4 +1,4 @@
-// src/context/SearchContext.jsx
+
 import React, { createContext, useContext, useState, useMemo, useCallback } from 'react';
 import { useProducts } from './ProductsContext';
 
@@ -7,7 +7,7 @@ const SearchContext = createContext();
 export const SearchProvider = ({ children }) => {
   const { products } = useProducts();
   const [searchQuery, setSearchQuery] = useState('');
-  //const [selectedCategory, setSelectedCategory] = useState('All');
+  
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const filteredProducts = useMemo(() => {
